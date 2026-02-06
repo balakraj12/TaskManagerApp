@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Task Management App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h2>Task Management App</h2>
+
+    <!-- Add Task Form -->
+    <form id="taskForm">
+      <input type="text" id="title" placeholder="Task Title" required />
+      <input type="text" id="description" placeholder="Task Description" />
+      <select id="status">
+        <option value="Pending">Pending</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Completed">Completed</option>
+      </select>
+      <button type="submit">Add Task</button>
+    </form>
+
+    <!-- Task List -->
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
